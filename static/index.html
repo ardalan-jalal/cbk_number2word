@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>گۆڕینی ژمارە بۆ وشە - Kurdish Number to Word Converter</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/static/style.css">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <i class="fas fa-calculator header-icon"></i>
+        <h1 class="title"> گۆڕینی ژمارە بۆ وشەی کوردی</h1>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="converter-card">
+        <div class="input-section">
+          <label for="numberInput" class="input-label">
+            <i class="fas fa-hashtag"></i>
+            ژمارەکەت بنووسە:
+          </label>
+          <div class="input-wrapper">
+            <input type="text" id="numberInput" class="number-input" placeholder="123" maxlength="25">
+            <button id="convertBtn" class="convert-btn">
+              <i class="fas fa-exchange-alt"></i>
+              گۆڕین
+            </button>
+          </div>
+
+          <div class="output-section">
+            <label class="output-label">
+              <i class="fas fa-language"></i>
+              ئەنجام:
+            </label>
+            <div class="output-wrapper">
+              <div id="outputBox" class="output-box">
+                <div class="placeholder">
+                  <i class="fas fa-arrow-up"></i>
+                  ژمارەیەک بنووسە و دوگمەی گۆڕین لێبدە
+                </div>
+              </div>
+              <button id="copyBtn" class="copy-btn" style="display: none;">
+                <i class="fas fa-copy"></i>
+                کۆپی
+              </button>
+            </div>
+          </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>دروستکراوە بە خۆشەویستی بۆ زمانی کوردی 💚</p>
+      <p>Made with love for Kurdish language</p>
+    </footer>
+
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay" style="display: none;">
+      <div class="loading-spinner">
+        <i class="fas fa-spinner fa-spin"></i>
+        <p>گۆڕین...</p>
+      </div>
+    </div>
+
+    <!-- Error Toast -->
+    <div id="errorToast" class="error-toast" style="display: none;">
+      <i class="fas fa-exclamation-triangle"></i>
+      <span id="errorMessage"></span>
+      <button id="closeError" class="close-error">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <!-- Success Toast -->
+    <div id="successToast" class="success-toast" style="display: none;">
+      <i class="fas fa-check-circle"></i>
+      <span id="successMessage"></span>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="/static/script.js"></script>
+</body>
+
+</html>

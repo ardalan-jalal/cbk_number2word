@@ -8,7 +8,7 @@ df = pd.read_excel("data.xlsx", engine="openpyxl")
 my_dict = dict(zip(df["index"], df["respective"]))
 
 
-MAX_VALUE = 1_000_000_000_000_000_000  # 10^18
+MAX_VALUE = 1_000_000_000_000_000_000  # 1 quintillion (10^18)
 
 def number2word(num):
     """Convert a number into words (supports up to 10^18)"""
