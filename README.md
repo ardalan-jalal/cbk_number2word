@@ -1,4 +1,4 @@
-# گۆڕینی ژمارە بۆ وشەی کوردی - Kurdish Number to Word Converter
+# Kurdish Number to Word Converter
 
 A minimalist web application that converts numbers to Kurdish words. Clean, fast, and efficient.
 
@@ -17,7 +17,7 @@ A minimalist web application that converts numbers to Kurdish words. Clean, fast
 
 ```bash
 git clone <repository-url>
-cd cbk_number2word-1
+cd cbk_number2word
 ```
 
 2. Install dependencies:
@@ -90,7 +90,7 @@ Convert a number to Kurdish words.
 ## File Structure
 
 ```
-cbk_number2word-1/
+cbk_number2word/
 ├── app.py              # Minimalist FastAPI backend
 ├── num2cbk.py          # Number to Kurdish word conversion logic
 ├── data.xlsx           # Kurdish number mappings
